@@ -6,9 +6,9 @@ indicator.forEach((indicator, i) => {
     index = i;
     carousel.scrollLeft = i * carousel.offsetWidth;
     if (i === index) {
-      indicator.src = "Images/Ellipse 3.png";
+      indicator.src = "./images/Ellipse 3.png";
     } else {
-      indicator.src = "Images/Ellipse 4.png";
+      indicator.src = "./images/Ellipse 4.png";
     }
   });
 });
