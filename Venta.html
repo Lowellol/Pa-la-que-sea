@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PA' LA QUE SEA INICIAR SESION</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script type="text/javascript" src="functions.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+          <button class="menu-btn">
+            <img src="images/menu.png" alt="Menú" />
+          </button>
+          <a href="./Inicio.html">
+            <img src="images/Logov2.png" alt="PA' LA QUE SEA"  class="logo" />
+          </a>
+          <div class="search-bar">
+            <input type="text" placeholder="buscar" />
+            <img src="images/buscar.png" alt="Buscar" />
+          </div>
+          <a href="Emprendimiento.html"" class="cart-btn">
+            <img src="images/compras.png" alt="Compra" />
+          </a>
+          <a href="IniciarSesion.html" class="user-btn">
+            <img src="images/user.png" alt="Usuario" />
+          </a>
+        </div>
+      </header>
+      <main class="Sell-container-Max">
+        <h2>Si ya lo echó, es porque le gustó. No se haga el loco</h2>
+        <div class="Sell-container">
+          <!-- Imagen del producto -->
+          <div class="sell-image">
+            <img src="images/Buriitos_venta.png" alt="Burrito Tradicional" />
+          </div>
+          
+          <!-- Contenedor de cantidad -->
+          <div class="quantity-container">
+            <p><strong>Burrito Tradicional</strong></p>
+            <p>$8.000</p>
+            <button class="quantity-btn" onclick="decreaseQuantity()">➖</button>
+            <span id="quantity">1</span>
+            <button class="quantity-btn" onclick="increaseQuantity()">➕</button>
+          </div>
+      
+          <!-- Detalles del total y botón de pago -->
+          <div class="Sell-details">
+            <p class="sell-summary">Total a pagar <span>$8.000</span></p>
+            <button class="pay-btn">
+              <img src="Images/bot_ordenar.png" alt="Ordenar"/>
+            </button>
+          </div>
+        </div>
+      </main>
+    </body>
+    </html>

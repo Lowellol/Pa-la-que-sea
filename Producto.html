@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> PA' LA QUE SEA /EMPRENDIMIENTO</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script type="text/javascript" src="functions.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+          <button class="menu-btn">
+            <img src="images/menu.png" alt="Menú" />
+          </button>
+          <a href="./Inicio.html">
+            <img src="images/Logov2.png" alt="PA' LA QUE SEA" class="logo" />
+          </a>
+          <div class="search-bar">
+            <input type="text" placeholder="buscar" />
+            <img src="images/buscar.png" alt="Buscar" />
+          </div>
+          <a href="Emprendimiento.html"" class="cart-btn">
+            <img src="images/compras.png" alt="Compra" />
+          </a>
+          <a href="IniciarSesion.html" class="user-btn">
+            <img src="images/user.png" alt="Usuario" />
+          </a>
+        </div>
+      </header>
+      <main class="product-container">
+        <div class="product-image">
+          <img src="images/Buriitos_venta.png" alt="Burrito Tradicional" />
+        </div>
+        <div class="product-info">
+          <p class="price">$8.000</p>
+          <h2 class="product-title">BURRITO TRADICIONAL</h2>
+          <p class="product-description">
+            Tortilla de harina, carne al pastor marinada con la receta de la casa,
+            jugoso chorizo en trozos, crocante chicharrón, delicioso hogao,
+            guacamole, frijol, refrito y queso fundido.
+          </p>
+          <div class="quantity-container">
+            <button class="quantity-btn" onclick="decreaseQuantity()">➖</button>
+            <span id="quantity">1</span>
+            <button class="quantity-btn" onclick="increaseQuantity()">➕</button>
+          </div>
+          <a href="./Venta.html">
+            <button class="order-btn"></button>
+            <img src="Images/bot_ordenar.png" class="order-btn" alt="Ordenar"/>
+          </a>
+        </div>
+      </main>
+  </body>
+</html>

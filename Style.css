@@ -1,0 +1,369 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bree+Serif&display=swap");
+
+body {
+  font-family: "Aleo", serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  padding: 0 20px;
+}
+.menu-btn,
+.cart-btn,
+.user-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding-right: 30px;
+  border: none;
+  cursor: pointer;
+}
+.menu-btn img,
+.cart-btn img,
+.user-btn img {
+  width: 55px;
+  height: 55px;
+}
+.logo {
+  width: 95px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.search-bar {
+  position: relative;
+}
+.search-bar input {
+  position: absolute;
+  background: none;
+  border: none;
+  height: auto;
+  width: 80%;
+  font-size: 16px;
+  color: white;
+  -left: 8px;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.search-bar img {
+  width: auto;
+  height: 68px;
+}
+/*Inicio */
+
+.Descubir {
+  position: absolute;
+  left: 13%;
+  bottom: 16%;
+  background: none;
+  border: none;
+}
+.carousel {
+  padding: 0;
+}
+.carousel-card {
+  position: relative;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / 1);
+  overflow: hidden;
+  place-content: center;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel .card {
+  list-style: none;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+  cursor: grab;
+  user-select: none;
+}
+
+/*Iniciar sesion */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+}
+.lock-icon {
+  margin-right: 100px;
+}
+.text-login {
+  font-family: "bree serif", serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #3b7ca6;
+}
+.login-box label {
+  font-family: "bree serif", serif;
+  display: flex;
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: black;
+}
+.login-box input {
+  font-size: 24px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.login-button {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.login-button img {
+  width: 200px;
+  height: auto;
+}
+/*Emprendimiento */
+.Enterprise {
+  padding: 50px;
+}
+
+.Enterprise h1 {
+  font-family: "bree serif", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b7ca6;
+  font-size: 60px;
+}
+
+.Enterprise-container {
+  position: relative;
+  height: 400px;
+  background-color: black;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+.Enterprise-container .Burrito-container {
+  position: absolute;
+  bottom: 0px;
+  width: 80%;
+  height: 80px;
+  background-color: #fed257;
+  left: 10%;
+  text-align: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.Enterprise-container h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 25px;
+}
+.Enterprise-container p {
+  width: 80%;
+  margin: 10px auto;
+  font-size: 18px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.Enterprise-container a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.Enterprise-container:hover .Burrito-container {
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+.Enterprise-container:hover p,
+.Enterprise-container:hover a {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.Enterprise-container .Enterprise-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.Enterprise-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.Enterprise-container:hover img {
+  opacity: 0;
+}
+/*Producto */
+/*Producto */
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f8fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+.product-image img {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.product-info {
+  text-align: left;
+}
+.price {
+  color: #d9a421;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.product-title {
+  color: #3b7ca6;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.product-description {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  width: 90%;
+}
+.Sell-container h2 {
+  font-family: "bree serif", serif;
+  color: #d9a421;
+}
+.quantity-container {
+  margin-top: 65px;
+  margin-left: 20%;
+}
+.quantity-btn {
+  border-radius: 50%;
+  background-color: #d9a421;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.order-btn {
+  background: none;
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+/* Vender*/
+/* Contenedor principal */
+.Sell-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre imagen y detalles */
+  width: 90%;
+  margin: 30px auto;
+  background: #f7f8fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px; /* Espacio entre elementos */
+}
+.Sell-container-Max h2 {
+  font-family: "bree serif", serif;
+  color: #d9a421;
+  padding-left: 5%;
+}
+
+/* Imagen del producto */
+.sell-image img {
+  width: 300px; /* Ajusta el tamaño según necesites */
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* Contenedor de cantidad */
+.quantity-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 5px;
+}
+
+/* Botones de cantidad */
+.quantity-btn {
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Contenedor de detalles */
+.Sell-details {
+  text-align: right;
+  flex: 1;
+}
+
+/* Botón de pago */
+.pay-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.pay-btn img {
+  width: 100px; /* Ajusta el tamaño de la imagen del botón */
+}
+
+/* Texto de total a pagar */
+.sell-summary {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: auto;
+}
